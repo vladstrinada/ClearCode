@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Zadanie 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" /> 
+
+    <style>
+body {
+            background-color: #ffff99;
+            font-family: sans-serif;
+            width: 100%;
+ 	height: 100%;
+ 	position: relative;
+        }
+        
+.foo {
+            background: #eeeeee;
+  float: left;
+ display: block;
+  padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 4px;
+             
+}
+
+.short {
+  
+    height: 30px;
+    width: 300px;
+}
+        
+.long {
+  
+     height: 30px;
+    width: 320px;
+    margin-left: 10px;
+}
+        
+
+        
+.rightfirst {
+            float:right;
+            clear: right;
+            color:#000000; 
+    font-weight: 600;
+    
+            
+        } 
+        
+.leftfirst {
+            color:#999999;
+            align-items: center;
+            float:left;
+            clear: center;
+        }
+        
+.rightsecond{
+            float:right;
+            clear: right;
+            color:#666666;
+            font-weight: 600;
+        }
+        
+.leftsecond{
+            color:#000000;
+            align-items: center;
+            float:left;
+            clear: center;
+        }
+        
+.flex-container {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+        /*For Iphone */
+             @media  only screen and (max-width: 667px){
+                 .flex-container{
+                     margin:10px;
+                     
+                    align-content: center;
+                 }
+                 .short{
+                     height:15px;
+                     width:110px;
+                 }
+                 .long{
+                     height:15px;
+                     width:130px;
+                 }
+                 body{
+                     font-size: 10px;
+                 }
+                 
+        }
+        /* For Ipad*/
+                     @media  only screen and (max-width: 1200px) and (min-width: 668px){
+                 .flex-container{
+                     margin:20px;
+                     
+                    align-content: center;
+                 }
+                 .short{
+                     height:20px;
+                     width:220px;
+                 }
+                 .long{
+                     height:20px;
+                     width:250px;
+                 }
+                 body{
+                     font-size: 13px;
+                 }
+                 
+        }
+   
+        
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+  <div class="foo long">
+    
+        <div class="leftfirst">Short text</div>
+      <div class="rightfirst">Is short</div>
+    </div>
+  <div class="foo short"><div class="leftsecond">A little bit I...</div><div class="rightsecond">Is longer</div></div>
+  <div class="foo long"><div class="leftfirst">Also a little ...</div><div class="rightfirst">Yes it is</div></div>
+        <div class="foo short"><div class="leftsecond">A long text I...</div><div class="rightsecond">Is long.</div></div>
+        <div class="foo long"><div class="leftfirst">A long t... </div><div class="rightfirst">Is long too!</div></div>
+        <div class="foo short"><div class="leftsecond">OK</div><div class="rightsecond">OK</div></div>
+        
+</div>
+
+</body>
+</html>
